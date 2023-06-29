@@ -6,34 +6,25 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            var bird = new Bird();
+            bird.canFly = false;
+            bird.color = "Blue";
+            bird.flightless = true;
+            bird.hasTail = true;
+            bird.LegCount = 2;
+            bird.size = "large";
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
-
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
+            Console.WriteLine($"This very interesting penguin is {bird.color}, has a tail? {bird.hasTail}, Leg Count? {bird.LegCount}, And is size {bird.size}... weird but okay");
 
 
+            var reptile = new Reptile();
+            reptile.scaleColor = "green";
+            reptile.hasEyes = false;
+            reptile.canFly = true;
+            reptile.hasClaws = true;
 
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+            Console.WriteLine($"Okay so this reptile is {reptile.scaleColor}, doesnt have eyes, can fly?? {reptile.canFly}, has claws?? {reptile.hasClaws}... I'm confused but okay");
         }
     }
 }
+
